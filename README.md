@@ -88,7 +88,7 @@ graph TD
     ROFORMER -->|Isolated Stems| SM
     SM -->|Stem Audio| MUSCRIPTOR
     MUSCRIPTOR -->|Note Tokens & Pitch| PP
-    PP -->|Type 1 MIDI (.mid)| SM
+    PP -->|"Type 1 MIDI (.mid)"| SM
     SM -->|Peaks & Stems JSON| UI
     UI --> WS
     UI --> MIX
