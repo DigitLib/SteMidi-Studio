@@ -1,0 +1,30 @@
+# SteMidi Studio - Standalone Dependencies
+# Web API & Server
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+python-multipart>=0.0.9
+websockets>=12.0
+aiofiles>=24.1.0
+
+# Audio Processing & Signal
+numpy>=1.24.0,<2.0.0
+scipy>=1.11.0
+soundfile>=0.12.1
+torch>=2.2.0
+torchaudio>=2.2.0
+
+# GPU Accelerated Inference
+onnxruntime-gpu>=1.20.0
+
+# Multi-Track MIDI Engine
+mido>=1.3.0
+pretty_midi>=0.2.10
+
+# Source Separation & Transcriber Models
+audio-separator>=0.20.0
+ml-collections>=0.1.1
+huggingface_hub>=0.20.0
+transformers>=4.38.0
+pyyaml>=6.0.1
+librosa>=0.10.1
+muscriptor>=0.3.0
