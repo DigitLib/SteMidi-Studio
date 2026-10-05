@@ -35,7 +35,7 @@ graph TB
     API --> SM
     SM --> STORAGE
     
-    UI -->|WS /api/ws/{id}| WS_HUB
+    UI -->|"WS /api/ws/{id}"| WS_HUB
     
     SM -->|Audio Tensors| ROFORMER
     SM -->|Stem Tensors| MUSCRIPTOR
@@ -44,7 +44,7 @@ graph TB
     
     ROFORMER -->|Isolated 44.1kHz WAVs| SM
     MUSCRIPTOR -->|Token Sequences| POSTPROC
-    POSTPROC -->|Type 1 MIDI (.mid)| SM
+    PP -->|"Type 1 MIDI (.mid)"| SM
     
     SM -->|Waveform Peaks & Events JSON| UI
     UI --> WS
